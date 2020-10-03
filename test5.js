@@ -44,6 +44,7 @@ let cart = new.Map(object.entires(company));
 for (let companies of recipeMap.keys()) {
     alert(companies);
 alert()
+hgjhgjh
     // твій код тут
 }
 
