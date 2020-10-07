@@ -1,0 +1,23 @@
+{
+  "name": "test5repos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "prettier": "^2.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergStra/test5repos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergStra/test5repos/issues"
+  },
+  "homepage": "https://github.com/SergStra/test5repos#readme"
+}
