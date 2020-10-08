@@ -7,18 +7,24 @@ debugger;
 const getCartPrice = (cart, prices) => {
   let sum = 0;
   cart.forEach((prod) => {
-    sum = 0;
-    prices.forEach((prodpr) => {
-      // alert(Object.keys(prod)[0]);
-      // alert(Object.keys(prodpr)[0]);
-      if (Object.keys(prod)[0] == Object.keys(prodpr)[0]) {
-        sum = sum + Object.values(prod)[0] * Object.values(prodpr)[0];
-      }
-    });
-    alert(`fuuu ${prod} , sum ${sum}`);
-  });
-  return sum;
+    pricc=prices.find(item=> item.key==prod);
+    sum=pricc.values*Object.values(prod)[0];
+    
+    alert(`Cost of ${Object.keys(prod)[0]} , will be ${sum} , USD`);
+ //  sum = 0;
+ //   prices.forEach((prodpr) => {
+ //     // alert(Object.keys(prod)[0]);
+ //     // alert(Object.keys(prodpr)[0]);
+ //     if (Object.keys(prod)[0] == Object.keys(prodpr)[0]) {
+ //       sum = sum + Object.values(prod)[0] * Object.values(prodpr)[0];
+ //     }
+ //   });
+ //   alert(`fuuu ${prod} , sum ${sum}`);
+ // });
+ // return sum;
+});
 };
+
 // твій код тут
 
 const cartPrice = getCartPrice(myCart, myPrices);
