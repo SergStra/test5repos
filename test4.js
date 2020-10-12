@@ -5,7 +5,7 @@ const myCart = [{ banana: 5 }, { milk: 1 }, { apples: 10 }];
 const myPrices = [{ milk: 6.4 }, { apple: 0.6 }, { banana: 4.6 }];
 debugger;
 const getCartPrice = (cart, prices) => {
-  let sum = 0, pricc=0;
+  let sum = 0;
   cart.forEach((prod) => {
     pricc=prices.find(item=> Object.keys(item)[0]==Object.keys(prod)[0]);
     sum=Object.values(pricc)[0]*Object.values(prod)[0];
