@@ -7,10 +7,8 @@ debugger;
 const getCartPrice = (cart, prices) => {
   let sum = 0, pricc=0;
   cart.forEach((prod) => {
-    pricc=prices.find(item=> item.key==prod);
-    
-    sum=pricc*Object.values(prod)[0];
-    alert(typeof(pricc));
+    pricc=prices.find(item=> Object.keys(item)[0]==Object.keys(prod)[0]);
+    sum=Object.values(pricc)[0]*Object.values(prod)[0];
     alert(`Cost of ${Object.keys(prod)[0]} , will be ${sum} , USD`);
  //  sum = 0;
  //   prices.forEach((prodpr) => {
@@ -22,7 +20,7 @@ const getCartPrice = (cart, prices) => {
  //   });
  //   alert(`fuuu ${prod} , sum ${sum}`);
  // });
- // return sum;
+  return sum;
 });
 };
 
