@@ -2,8 +2,8 @@
 const myString1 = 'abcd';
 const myString2 = 'abcdef';
 
-const checkIfStringsAreSimilar = s => {
-	// твій код тут
-}
+const checkIfStringsAreSimilar = (s) => {
+    // твій код тут
+};
 
-const isSimilar = checkIfStringsAreSimilar(myString1, myString2) // true or false
+const isSimilar = checkIfStringsAreSimilar(myString1, myString2); // true or false
