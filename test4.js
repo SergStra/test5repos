@@ -5,7 +5,6 @@ const myCart = [{ banana: 5 }, { milk: 1 }, { apples: 10 }];
 const myPrices = [{ milk: 6.4 }, { apple: 0.6 }, { banana: 4.6 }];
 debugger;
 const getCartPrice = (cart, prices) => {
-<<<<<<< HEAD
   let sum = 0;
   cart.forEach((prod) => {
     pricc=prices.find(item=> Object.keys(item)[0]==Object.keys(prod)[0]);
@@ -23,21 +22,6 @@ const getCartPrice = (cart, prices) => {
  // });
   return sum;
 });
-=======
-    let sum = 0;
-    cart.forEach((prod) => {
-        sum = 0;
-        prices.forEach((prodpr) => {
-            // alert(Object.keys(prod)[0]);
-            // alert(Object.keys(prodpr)[0]);
-            if (Object.keys(prod)[0] == Object.keys(prodpr)[0]) {
-                sum = sum + Object.values(prod)[0] * Object.values(prodpr)[0];
-            }
-        });
-        alert(`fuuu ${prod} , sum ${sum}`);
-    });
-    return sum;
->>>>>>> 3a9b7e7852e80ceeb55db6135b11027661293dbe
 };
 
 // твій код тут
