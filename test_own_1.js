@@ -9,4 +9,5 @@ function camelize(str) {
       .join(''); // соединяет ['my', 'Long', 'Word'] в 'myLongWord'
   }
 let stringInput="my-long-word";
+  alert(stringInput);
   alert(camelize(stringInput))
