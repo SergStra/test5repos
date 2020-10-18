@@ -6,11 +6,11 @@ const myString1 = 'abcdef';
 
 const checkIfStringsAreSimilar = (s1, s2) => {
     let similar = 0;
-    string1=s1.split('');
+    
     string2=s2.split('');
-     string1.sort();
+     
      string2.sort();
-     s1=string1.join();
+     s1=string1.join(string1.sort(s1.split('')));
      s2=string2.join();
      if (s1.indexOf(s2)==0) return true;
      if (s2.indexOf(s1)==0) return true;

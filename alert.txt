@@ -1,0 +1,6 @@
+1 function showMessage(from, text) { // аргументы: from, text
+2   alert(from + ': ' + text);
+3 }
+
+4 showMessage('Аня', 'Привет!'); // Аня: Привет! (*)
+5 showMessage('Аня', "Как дела?"); // Аня: Как дела? (**)
