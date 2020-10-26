@@ -1,21 +1,21 @@
 // є zякась стрінга. Треба знайти найдовшу послідовність однаокових букв
-const myString = 'hh jjj dfg d f fff nn kk';
-const getLongestSequence = (s) => {
-    let str1 = '',
-        strmax = str1;
+const myString = 'hh jjjj dfg d f fff nn kk';
+const getLongestSequence = (strng) => {
+    let PartOfStr = '',
+        strmax = PartOfStr;
 
-    debugger;
-    for (let ch of s) {
-        if (ch == str1[0]) {
-            str1 = str1 + ch;
+    for (let simbol of strng) {
+        if (simbol == PartOfStr[0]) {
+            PartOfStr = PartOfStr + simbol;
         } else {
-            if (strmax.length <= str1.length) {
-                strmax = str1;
+            if (strmax.length <= PartOfStr.length) {
+                strmax = PartOfStr;
             }
-            str1 = ch;
+            PartOfStr = simbol;
         }
     }
-    alert(`nnn= ${strmax}`);
+    alert(`The longest is = ${strmax}`);
+    return strmax
     // твій код тут
 };
 
