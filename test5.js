@@ -42,14 +42,16 @@ const company = [
 const getProductsContinents = (cart, compS) => {
  let ProdOnContinent=[] 
     cart.forEach((product) => {
-        compS.forEach((Countries) => {
-            if (Object.values(product.company) == Countries.id) {
-            let rez={prod: product.name, country: Countries.country}  // not nice. Є альтернатива?
+        compS.forEach((company) => {
+            if (Object.values(product.company) == company.id) {
+            let rez={prod: product.name, country: company.country}  // not nice. Є альтернатива?
             ProdOnContinent.push(rez)
             }
         });
     });
+console.log(ProdOnContinent)
 return ProdOnContinent
+
     // твій код тут
 };
 const continents = getProductsContinents(myCart, company);
