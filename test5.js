@@ -40,16 +40,16 @@ const company = [
 ];
 
 const getProductsContinents = (cart, compS) => {
+ let ProdOnContinent=[] 
     cart.forEach((product) => {
         compS.forEach((Countries) => {
             if (Object.values(product.company) == Countries.id) {
-                alert(`Продукт ${product.name} виготовляється в країні ${Countries.country}`);
-                alert(Countries.country);
+            let rez={prod: product.name, country: Countries.country}  // not nice. Є альтернатива?
+            ProdOnContinent.push(rez)
             }
         });
     });
-
+return ProdOnContinent
     // твій код тут
 };
-
 const continents = getProductsContinents(myCart, company);
